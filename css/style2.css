@@ -433,6 +433,9 @@ header{
         transform: translateY(15px);
     }
 }
+
+/*########################## Navbar end !!!!!!!!########################*/
+
 .category-image{
             width: 100%;
             height: 100%;
@@ -467,21 +470,22 @@ header{
 
 }
 
-.fas.fa-caret-right, .fas.fa-caret-left{
+.fas.fa-caret-right, .fas.fa-angle-right, .fas.fa-angle-left, .fas.fa-caret-left{
     color: #60b4df;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background: #fff;
     border: 1px solid transparent;
-    box-shadow: 0px 0px 1px 1px #e6e2e2;}
-
+    box-shadow: 0px 0px 1px 1px #e6e2e2;
+}
 .owl-next:hover ,.owl-prev:hover{
     color: gray;
 
 }
 .owl-theme .owl-nav [class*='owl-']:hover {
     color: #FFF;
+    background-color: transparent;
     
 }
 
@@ -490,16 +494,16 @@ header{
     border: none;
     color: #60b4df;
  }
- .owl-carousel .item:hover{
+ .owl-carousel.category .item:hover{
     color: #da35cd;
  }
 
-.owl-prev {
+.category .owl-prev {
 
   right: 3rem;
 }
 
-.owl-next {
+.category .owl-next {
 
   right: 0rem;
 }
@@ -513,7 +517,7 @@ header{
 }
 .category-menu button.active {
 padding-bottom: 10px;
-  border-bottom: 2px solid #60b4df;
+border-bottom: 2px solid #60b4df;
 
 }
 .category-menu button:focus{
@@ -571,23 +575,61 @@ color:#605a5a;
 }
 
 /*working team*/
+.working-team{
+    background-color:#f5f2f2;
+    padding: 10px 0 50px 0;
+}
 .working .owl-prev,
 .working .owl-next {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 100%;
+  transform: translateY(0%);
 
 
 }
+.owl-carousel.working .item{
+    background-color: transparent;
+ }
+ .owl-carousel.working .item:hover{
+    background-color: transparent;
+    opacity: 1s all;
+ }
+ .owl-carousel.working .item img{
+    width: inherit;
+ }
+ .owl-carousel.working .item ul li{
+    list-style-type: square;
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: grey;
+ }
+ .owl-carousel.working .item h5{
+    color: #60b4df;
+    font-size: 18px;
+    padding-top: 10px;
+    font-family: 'Poppins';
+ }
+ .owl-carousel.working .item h5 a{
+    text-decoration: none;
+    color:#60b4df; 
+    cursor: pointer;
+ }
+ .owl-carousel.working .item p{
+    color: #453fa2;
+    font-size: 10px;
+    font-family: 'Poppins';
+ }
+
 .working .owl-prev {
 
-  left: -3rem;
+  right: 55%;
 }
 
 .working .owl-next {
 
-  right: -3rem;
+  right: 45%;
 }
+
 /*footer styling*/
 .about_text{
     text-align: justify;
@@ -641,4 +683,26 @@ color:#605a5a;
 }
 .footer{
  background-color: #384c61;
+}
+.footer .about h3,.footer .quick_links h3, .footer .contact h3{
+font-size: 18px;
+font-family: 'Poppins';
+}
+.footer .about p{
+font-size: 14px;
+color: lightgray;
+font-family: 'Poppins';
+}
+.footer .quick_links .flex-column .nav-link{
+padding:5px 0 0 0;
+font-size: 14px;
+}
+.footer .quick_links .social{
+   float: right; 
+}
+
+.footer .contact .address .nav-link{
+padding-top: 2px;
+font-size: 14px;
+
 }
