@@ -19,9 +19,10 @@
   evt.currentTarget.className += " active";
 }
 
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 //||end category-item to show category-content
+
+
 
 // || owl-carousel js code 
 $('.owl-carousel.category').owlCarousel({
@@ -29,8 +30,8 @@ $('.owl-carousel.category').owlCarousel({
     margin:10,
     nav:true,
     navText: [
-      "<i class='fas fa-caret-left'></i>",
-      "<i class='fas fa-caret-right'></i>"
+     "<i class='fas fa-angle-left'></i>",
+      "<i class='fas fa-angle-right'></i>"
     ],
     dots: false, 
     responsive:{
@@ -44,10 +45,35 @@ $('.owl-carousel.category').owlCarousel({
             items:5
         }
     }
-})
+});
 //||end owl-carousel js code
 
+//2 nd carousel
+    $('.owl-carousel.working').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+     navText: [
+      "<i class='fas fa-angle-left'></i>",
+      "<i class='fas fa-angle-right'></i>"
+    ],
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+
+        1000:{
+            items:5
+        }
+    }
+});
 
 
 // for parallax-img
+
+
 
