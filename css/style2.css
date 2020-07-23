@@ -828,3 +828,35 @@ background-image: url("../img/parallax.jpg"); background-size: cover;
 
 /* #########################    end Single product###############      ################# #*/
 
+/*############################ login-main style ###################*/
+
+.login-main{background:linear-gradient(45deg, #f100c1 ,#ffbf00); height: 100vh; }
+
+.login-board{
+    margin: 70px 0 70px 0; background-color: #60b4df; 
+    padding: 30px 50px 60px 50px; box-sizing: border-box; box-shadow: 6px 7px 10px 1px #363739; border-radius: 10px;}
+    .login-board h3{padding: 10px 0 30px 0; text-align: center; font-family: 'Poppins';color: white; }
+.login-board .form-group{position: relative;}
+
+.login-board input
+{
+    border:none;border-bottom: 1px solid white; border-radius: unset;
+    box-shadow: none !important; outline: none ; margin-bottom: 30px;padding: 10px 0;background-color: #60b4df;
+}
+
+.login-board span{
+    position: absolute;
+    pointer-events: none;
+    top:5px;
+    left:0;
+    transition: 0.2s ease all;
+    color: white; font-weight: 40px;font-family: 'Poppins';}
+.login-board .form-group input:focus ~ span,
+.login-board .form-group input:valid ~ span{top:-20px; font-size: 14px; }
+.login-board .form-group input:focus,
+.login-board .form-group input:valid{border-bottom:1px solid white; color:black ; padding-left: 10px; font-family: sans-serif; background-color: #60b4df;}
+.forget-password{float: right; margin: -20px 0 0px 0; color: black;}.forget-password:hover{text-decoration: none;}
+.login-board .btn-submit{ margin-top:60px;padding:7px 0; border: 2px solid white; color: white; border-radius: 10px; background-color: #60b4df;display: block; width: 100%;outline: none;}
+.login-board .btn-submit:hover{color: #60b4df; background-color: white; transition: 0.1s ease all;  box-shadow:6px 5px 8px 1px #363739; }
+.create-account{text-align: center;   color: #fff;  margin-top: 20px; display: block; width: 100%;}
+.create-account:hover{text-decoration: none;}
