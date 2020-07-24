@@ -661,7 +661,7 @@ color:#605a5a;
     
     box-shadow: 6px 0px 3px -1px #212020;
 }
-.fab:hover {
+.social_media li .fab:hover {
     transform: translateY(-7px);
      transition: all 0.5s;
 }
@@ -835,7 +835,8 @@ background-image: url("../img/parallax.jpg"); background-size: cover;
 .login-board{
     margin: 70px 0 70px 0; background-color: #60b4df; 
     padding: 30px 50px 60px 50px; box-sizing: border-box; box-shadow: 6px 7px 10px 1px #363739; border-radius: 10px;}
-    .login-board h3{padding: 10px 0 30px 0; text-align: center; font-family: 'Poppins';color: white; }
+    .login-board h3{padding: 10px 0 30px 0; text-align: center; font-family: 'Poppins';color: white; 
+text-decoration: underline; text-decoration-color: #fff; font-size:20px;text-underline-position: under;}
 .login-board .form-group{position: relative;}
 
 .login-board input
@@ -860,3 +861,39 @@ background-image: url("../img/parallax.jpg"); background-size: cover;
 .login-board .btn-submit:hover{color: #60b4df; background-color: white; transition: 0.1s ease all;  box-shadow:6px 5px 8px 1px #363739; }
 .create-account{text-align: center;   color: #fff;  margin-top: 20px; display: block; width: 100%;}
 .create-account:hover{text-decoration: none;}
+
+
+
+/*####################### contcat ##########################*/
+.contact-board{
+    margin: 30px 0 70px 0; background-color: #fff; 
+    padding: 30px 50px 60px 50px; box-sizing: border-box; box-shadow: 6px 7px 10px 1px #e9ecef; border-radius: 10px;}
+    .contact-board h3{padding: 10px 0 30px 0; text-align: center; font-family: 'Poppins';color: #60b4df; 
+text-decoration: underline; text-decoration-color: #60b4df; font-size:20px;text-underline-position: under;}
+.contact-board .form-group{position: relative;}
+
+.contact-board input,.contact-board textarea
+{
+    border:none;border-bottom: 1px solid #60b4df; border-radius: unset;
+    box-shadow: none !important; outline: none ; margin-bottom: 30px;padding: 10px 0;background-color: #fff;
+}
+
+.contact-board span{
+    position: absolute;
+    pointer-events: none;
+    top:5px;
+    left:0;
+    transition: 0.2s ease all;
+    color: #60b4df; font-weight: 40px;font-family: 'Poppins';}
+.contact-board .form-group input:focus ~ span,
+.contact-board .form-group input:valid ~ span,
+.contact-board .form-group textarea:focus ~ span,
+.contact-board .form-group textarea:valid ~ span{top:-20px; font-size: 14px; }
+.contact-board .form-group input:focus,
+.contact-board .form-group input:valid,
+.contact-board .form-group textarea:focus,
+.contact-board .form-group textarea:valid{border-bottom:1px solid #60b4df; color:black ; padding-left: 10px; font-family: sans-serif; background-color: #fff;}
+.contact-board .btn-submit{ margin-top:60px;padding:7px 0; border: 2px solid #60b4df; color: #60b4df; border-radius: 10px; background-color: #fff;display: block; width: 100%;outline: none;}
+.contact-board .btn-submit:hover{color: #fff; background-color: #60b4df; transition: 0.1s ease all;  box-shadow:6px 5px 8px 1px #363739; }
+.contact-text{margin: 30px 0 60px 0; padding: 10px 0px 10px 0px; font-family: 'Poppins';}
+.contact-text p a:hover{text-decoration: none;}
