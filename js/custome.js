@@ -29,6 +29,9 @@ $('.owl-carousel.category').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
     navText: [
      "<i class='fas fa-angle-left'></i>",
       "<i class='fas fa-angle-right'></i>"
